@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"declaration": false,
+		"declarationMap": false,
+		"module": "nodenext",
+		"moduleResolution": "nodenext",
+		"target": "esnext",
+		"skipLibCheck": true,
+		"strict": true
+	}
+}
