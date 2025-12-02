@@ -6,7 +6,8 @@
 	"main": "index.js",
 	"scripts": {
 		"check": "biome check . --fix",
-		"start": "tsx run.ts"
+		"start": "tsx run.ts",
+		"start:example": "EXAMPLE=true tsx run.ts"
 	},
 	"keywords": [],
 	"author": "",

@@ -21,11 +21,12 @@ const modulePath = join(
 	`part-${part === 1 ? "one" : "two"}.js`,
 );
 
+const isExample = process.env.EXAMPLE === "true";
 const inputPath = join(
 	process.cwd(),
 	"inputs",
 	year.toString(),
-	`${day.toString().padStart(2, "0")}.txt`,
+	`${day.toString().padStart(2, "0")}${isExample ? "-example" : ""}.txt`,
 );
 
 let input: string | null = null;
