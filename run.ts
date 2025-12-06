@@ -39,7 +39,10 @@ try {
 }
 try {
 	const module = await import(modulePath);
-	const result = await module.default(input);
+	const main = module.default;
+	console.time("Execution Time");
+	const result = await main(input);
+	console.timeEnd("Execution Time");
 	console.log(`${year}-${day} Part ${part} Result:`, result);
 } catch (error) {
 	console.error(`Error importing or executing module at ${modulePath}:`, error);
